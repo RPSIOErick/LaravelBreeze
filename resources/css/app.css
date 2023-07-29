@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#sign-form-title, #list-clients-title
+{
+    font-size: 24px;
+    font-weight: bold;
+}
+#sign-btn
+{
+    position: relative;
+    top: 15px;
+}
+.table-fixed
+{
+    margin-top: 2%;
+}
+
+#grid-nome, #grid-endereco, #grid-bairro, #grid-cidade, #client-data
+{
+    text-transform: capitalize;
+}
+#grid-estado, #client-data-state
+{
+    text-transform: uppercase;
+}
+#client-data-delete
+{
+    margin: 5%;
+}
+#img-logo
+{
+    width: 4vw;
+}
