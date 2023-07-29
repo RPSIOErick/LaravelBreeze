@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="/">
-                        <img src="https://eteczonaleste.com.br/img/logo-etec.png" id="img-logo">
+                        <x-application-logo class="block h-9 w-auto fill-current text-black-800"/>
                     </a>
                 </div>
 
