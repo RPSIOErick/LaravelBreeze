@@ -33,3 +33,32 @@
 {
     width: 4vw;
 }
+#client-op-icon
+{
+    font-size: 3.5vh;
+    position: relative;
+    vertical-align: middle;
+    background-color: #818cf8;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+    #client-table
+    {
+        width: 85vw;
+    }
+    #client-op-icon
+    {
+        font-size: 2vh;
+    }
+    #client-data
+    {
+        font-size: 10px;
+    }
+    th
+    {
+        font-size: small;
+    }
+}

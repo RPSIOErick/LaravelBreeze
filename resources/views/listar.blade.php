@@ -13,7 +13,7 @@
                     <div id="list-clients-title"> {{ __("Lista de Clientes Cadastrados") }} </div>
 
                     <!-- Tabela de Clientes Cadastrados -->
-                    <table class="table-fixed text-center">
+                    <table class="table-fixed text-center" id="client-table">
                         <thead>
                             <tr>
                             <th class="w-1/4 px-4 py-2">Nome</th>
@@ -38,10 +38,10 @@
                             
                             <!-- Gerenciamento de Cliente -->
                             <td class="border px-4 py-2" id="client-data">
-                                <a href="{{url("/editar/$cliente->id")}}"> Editar </a>
+                                <a href="{{url("/editar/$cliente->id")}}"> <ion-icon name="refresh" id="client-op-icon"></ion-icon> </a>
                             </td>
                             <td class="border px-4 py-2" id="client-data">
-                                <a href="{{url("/excluir/$cliente->id")}}"> Excluir </a>
+                                <a href="{{url("/excluir/$cliente->id")}}"> <ion-icon name="trash" id="client-op-icon"></ion-icon> </a>
                             </td>
                             <!-- Fim do Gerenciamento de Cliente -->
                             </tr>
@@ -54,4 +54,7 @@
             </div>
         </div>
     </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </x-app-layout>
