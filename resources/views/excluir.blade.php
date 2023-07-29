@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Editar Clientes') }}
+            {{ __('Excluir Clientes') }}
         </h2>
     </x-slot>
 
@@ -11,7 +11,7 @@
                 <div class="p-10 text-gray-900">
                     <!-- Título do container -->
                     <center>
-                    <div id="sign-form-title"> {{ __("Formulário de Edição") }} </div>
+                    <div id="sign-form-title"> {{ __("Formulário de Exclusão") }} </div>
 
                     <br>
 
