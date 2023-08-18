@@ -21,7 +21,7 @@
 {
     text-transform: capitalize;
 }
-#grid-estado, #client-data-state
+option
 {
     text-transform: uppercase;
 }
@@ -33,21 +33,33 @@
 {
     width: 4vw;
 }
-#client-op-icon
+#client-op-icon-edit, #client-op-icon-trash
 {
-    font-size: 3.5vh;
+    font-size: 4.5vh;
     position: relative;
     vertical-align: middle;
-    background-color: #818cf8;
+    color: black;
+    transition: ease-out 0.2s;
+    padding: 10px;
+}
+#client-op-icon-edit:hover{
+    background-color: rgba(130, 159, 255, 0.776);
+    transition: ease-in-out 0.3s;
     color: white;
-    padding: 5px;
-    border-radius: 50%;
+    border-radius: 50px;
+}
+#client-op-icon-trash:hover{
+
+    background-color: rgba(171, 0, 0, 0.776);
+    transition: ease-in-out 0.3s;
+    color: white;
+    border-radius: 50px;
+
 }
 
 @media only screen and (max-width: 1000px) {
-    #client-table
-    {
-        width: 85vw;
+    #client-table-div{
+        overflow-x: auto;
     }
     #client-op-icon
     {
@@ -60,5 +72,8 @@
     th
     {
         font-size: small;
+    }
+    #client-op-icon-edit, #client-op-icon-trash{
+        font-size: 2.5vh;
     }
 }

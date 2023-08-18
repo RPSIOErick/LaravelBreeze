@@ -69,11 +69,44 @@
                             <!-- Fim do Input Cidade -->
                             <!-- Input Estado -->
                             <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-estado">
-                                Estado
-                            </label>
-                            <input class="text-center appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-estado" type="text" placeholder="SP" name="estado"  value="{{$cliente->estado}}" maxlength="2">
-                            </div>
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-estado">
+                                    Estado
+                                </label>
+                                <div class="relative">
+                                    <select required name="estado" class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-estado" style="text-transform: none;">
+                                        <option value="{{$cliente->estado}}" hidden selected> {{ $cliente->estado }} </option>
+                                        <option value="AC">AC</option>
+                                        <option value="AL">AL</option>
+                                        <option value="AP">AP</option>
+                                        <option value="AM">AM</option>
+                                        <option value="BA">BA</option>
+                                        <option value="CE">CE</option>
+                                        <option value="DF">DF</option>
+                                        <option value="ES">ES</option>
+                                        <option value="GO">GO</option>
+                                        <option value="MA">MA</option>
+                                        <option value="MT">MT</option>
+                                        <option value="MS">MS</option>
+                                        <option value="MG">MG</option>
+                                        <option value="PA">PA</option>
+                                        <option value="PB">PB</option>
+                                        <option value="PR">PR</option>
+                                        <option value="PE">PE</option>
+                                        <option value="PI">PI</option>
+                                        <option value="RJ">RJ</option>
+                                        <option value="RN">RN</option>
+                                        <option value="RS">RS</option>
+                                        <option value="RO">RO</option>
+                                        <option value="RR">RR</option>
+                                        <option value="SC">SC</option>
+                                        <option value="SP">SP</option>
+                                        <option value="SE">SE</option>
+                                        <option value="TO">TO</option>
+                                    </select>
+                                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                    </div>
+                                </div>
+                            </div>     
                             <!-- Fim do Input Estado -->
                         </div>
                         <!-- Fim dos Inputs: CEP, Cidade e Estado -->

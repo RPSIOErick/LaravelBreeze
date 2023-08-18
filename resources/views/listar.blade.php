@@ -12,6 +12,7 @@
                     <center>
                     <div id="list-clients-title"> {{ __("Lista de Clientes Cadastrados") }} </div>
 
+                    <div id="client-table-div">
                     <!-- Tabela de Clientes Cadastrados -->
                     <table class="table-fixed text-center" id="client-table">
                         <thead>
@@ -37,11 +38,11 @@
                             <td class="border px-4 py-2" id="client-data-state"> {{$cliente->estado}} </td>
                             
                             <!-- Gerenciamento de Cliente -->
-                            <td class="border px-4 py-2" id="client-data">
-                                <a href="{{url("/editar/$cliente->id")}}"> <ion-icon name="refresh" id="client-op-icon"></ion-icon> </a>
+                            <td class="border-0 px-4 py-2" id="client-data">
+                                <a href="{{url("/editar/$cliente->id")}}"> <ion-icon name="create-outline" id="client-op-icon-edit"></ion-icon> </a>
                             </td>
-                            <td class="border px-4 py-2" id="client-data">
-                                <a href="{{url("/excluir/$cliente->id")}}"> <ion-icon name="trash" id="client-op-icon"></ion-icon> </a>
+                            <td class="border-0 px-4 py-2" id="client-data">
+                                <a href="{{url("/excluir/$cliente->id")}}"> <ion-icon name="trash-bin-outline" id="client-op-icon-trash"></ion-icon> </a>
                             </td>
                             <!-- Fim do Gerenciamento de Cliente -->
                             </tr>
@@ -49,6 +50,7 @@
                         </tbody>
                     </table>
                     <!-- Fim da Tabela de Clientes Cadastrados -->
+                    </div>
                 </div>
                 </center>
             </div>
